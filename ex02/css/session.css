@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins','Arial', sans-serif;
+}
+
+
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+
+}
+.container
+{
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+	height: 350px;
+	box-shadow: 0 2px 15px rgba(0,0,0,0.4);
+	box-sizing: border-box;
+	background: #2196f3;
+	border-radius: 40px 0px 40px 0;
+}
+.container:before{
+	content: '';
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: rgba(255,255,255,.2);
+	z-index: 2;
+}
+.container .box:before
+{
+	content: '';
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;	
+	z-index: 2;
+}
+
+
+
+h2
+{
+	margin: 20px auto;
+	color: #fff;
+}
+
+.container form
+{
+
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+.container form input
+{
+	margin: 8px;
+	height: 30px;
+	padding: 0 20px;
+	outline: none;
+	box-sizing: border-box; 
+	border-radius: 20px;
+	border: 1px solid #fff;
+	transition: 0.5s;
+}
+.botao
+{
+	background: none;
+	border: none;
+	width: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	z-index: 1;
+	color: #fff;	
+}
+
+.botao:hover
+{
+	background: #fff;
+	color: #2196f3;
+}
